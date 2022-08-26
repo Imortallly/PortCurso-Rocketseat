@@ -14,46 +14,117 @@ main {
     display: flex;
 }
 .container-side-bar-left{
-    border: 1px solid black;
-    width: 40rem;
+    width: 36rem;
+
 }
 .side-bar-profile-container {
     background-color: #302F3D;
-    border: 0px solid black;
-    width: 34rem;
+    width: 30rem;
     margin-top: 3rem;
     margin-bottom: 2rem;
     margin-right: 3rem;
     margin-left: 3rem;
-    height: 20rem;
+    height: 23rem;
     border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+.side-bar-profile-container img {
+    width: 12rem;
+    height: 12rem;
+    border: 2px solid green;
+    border-radius: 100px;
+}    
 .side-bar-info-profile-container {
     background-color: #302F3D;
-    border: 2px solid black;
-    width: 34rem;
+    width: 30rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-right: 3rem;
     margin-left: 3rem;
-    height: 20rem;
+    height: 28rem;
     border-radius: 25px;
+    display: flex;
+}
+.side-bar-info-profile-container svg {
+    width: 5rem;
+    padding-left: 4rem;
+    color: #837E9F;
+}
+.info-img {
+    width: 10rem;
+    height: 28rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.text-img {
+    width: 24rem;
+    height: 28rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.text-img h2 {
+    color: #837E9F;
+    font-size: 19px;
 }
 .side-bar-tags-container {
     background-color: #302F3D;
-    border: 2px solid black;
-    width: 34rem;
+    width: 30rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-right: 3rem;
     margin-left: 3rem;
-    height: 13rem;
+    height: 11rem;
     border-radius: 25px;
+}
+.title-tags {
+    display: flex;
+    align-items: center;
+    width: 28rem;
+    height: 4rem;
+    padding-left: 2rem;
+    color: #837E9F;
+    font-size: 25px;
+}
+.global-tags {
+    display: flex;
+}
+.tags { 
+    padding-top: 1.5rem;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+}
+.around1 {
+    padding-left: 1.69rem;
+    padding-right: 1.69rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-radius: 30px;
+    background-color: #CB92B1;
+}
+.around2 {
+    padding-left: 1.69rem;
+    padding-right: 1.69rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-radius: 30px;
+    background-color: #CB92B1;
+}
+.around3 {
+    padding-left: 1.69rem;
+    padding-right: 1.69rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-radius: 30px;
+    background-color: #CB92B1;
 }
 .side-bar-experiences-container {
     background-color: #302F3D;
-    border: 2px solid black;
-    width: 34rem;
+    width: 30rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-right: 3rem;
@@ -63,8 +134,7 @@ main {
 }
 .side-bar-education-container {
     background-color: #302F3D;
-    border: 0px solid black;
-    width: 34rem;
+    width: 30rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-right: 3rem;
@@ -80,7 +150,6 @@ main {
 }
 .main-projects {
     background-color: #302F3D;
-    border: 1px solid black;
     width: 100%;
     margin-top: 3rem;
     margin-bottom: 1rem;
@@ -90,18 +159,25 @@ main {
     border-radius: 25px;
     font-size: 24px;
 }
-.main-projects :first-child p {
-    padding: 1.5rem;
+#side-left {
+    float: left;
+    padding: 2.5rem;
+}
+#side-right {
+    float: right;
+    padding: 2.5rem;
+}
+/* .main-projects :first-child p {
+    padding: 2.5rem;
     float: left;
 }
 .main-projects :last-child p{
-    padding: 0;
+    padding: 2.5rem;
     float: right;
-}
+} */
 .project-1 {
     background-color: #302F3D;
-    border: 1px solid black;
-    width: 55rem;
+    width: 57.21rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 3.25rem;
@@ -111,8 +187,7 @@ main {
 }
 .project-2 {
     background-color: #302F3D;
-    border: 1px solid black;
-    width: 55rem;
+    width: 57.21rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
@@ -122,7 +197,6 @@ main {
 }
 .recent-projects {
     background-color: #302F3D;
-    border: 1px solid black;
     width: 100%;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -133,7 +207,6 @@ main {
 }
 .post {
     background-color: #302F3D;
-    border: 1px solid black;
     width: 100%;
     margin-top: 1rem;
     margin-bottom: 1rem;
