@@ -167,6 +167,7 @@ main {
     float: right;
     padding: 2.5rem;
 }
+
 /* .main-projects :first-child p {
     padding: 2.5rem;
     float: left;
@@ -175,6 +176,7 @@ main {
     padding: 2.5rem;
     float: right;
 } */
+
 .project-1 {
     background-color: #302F3D;
     width: 57.21rem;
