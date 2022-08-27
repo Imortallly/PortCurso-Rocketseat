@@ -14,7 +14,7 @@ main {
     display: flex;
 }
 .container-side-bar-left{
-    width: 36rem;
+    width: 33rem;
 
 }
 .side-bar-profile-container {
@@ -44,7 +44,7 @@ main {
     margin-bottom: 2rem;
     margin-right: 3rem;
     margin-left: 3rem;
-    height: 28rem;
+    height: 24rem;
     border-radius: 25px;
     display: flex;
 }
@@ -55,14 +55,14 @@ main {
 }
 .info-img {
     width: 10rem;
-    height: 28rem;
+    height: 24rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 .text-img {
     width: 24rem;
-    height: 28rem;
+    height: 24rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -105,6 +105,9 @@ main {
     padding-bottom: 0.7rem;
     border-radius: 30px;
     background-color: #CB92B1;
+    -webkit-box-shadow: 10px 7px 14px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 7px 14px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 7px 14px -8px rgba(0,0,0,0.75);
 }
 .around2 {
     padding-left: 1.69rem;
@@ -113,6 +116,9 @@ main {
     padding-bottom: 0.7rem;
     border-radius: 30px;
     background-color: #CB92B1;
+    -webkit-box-shadow: 10px 7px 14px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 7px 14px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 7px 14px -8px rgba(0,0,0,0.75);
 }
 .around3 {
     padding-left: 1.69rem;
@@ -121,6 +127,9 @@ main {
     padding-bottom: 0.7rem;
     border-radius: 30px;
     background-color: #CB92B1;
+    -webkit-box-shadow: 10px 7px 14px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 7px 14px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 7px 14px -8px rgba(0,0,0,0.75);
 }
 .side-bar-experiences-container {
     background-color: #302F3D;
@@ -132,6 +141,28 @@ main {
     height: 25rem;
     border-radius: 25px;
 }
+.experiences {
+    display: flex;
+    align-items: center;
+    width: 28rem;
+    height: 4rem;
+    padding-left: 2rem;
+    color: #837E9F;
+    font-size: 25px;
+}
+.experiences-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25rem;
+    height: 21rem;
+    font-size: 20px;
+    padding-left: 5rem;
+    color: #837E9F;
+}
+.experiences-box li {
+    font-weight: bold;
+}
 .side-bar-education-container {
     background-color: #302F3D;
     width: 30rem;
@@ -139,8 +170,21 @@ main {
     margin-bottom: 2rem;
     margin-right: 3rem;
     margin-left: 3rem;
-    height: 25rem;
+    height: 17rem;
     border-radius: 25px;
+}
+.education-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25rem;
+    height: 13rem;
+    font-size: 20px;
+    padding-left: 5rem;
+    color: #837E9F;
+}
+.education-box li {
+    font-weight: bold;
 }
 .container-side-bar-right {
     display: flex;
@@ -159,24 +203,14 @@ main {
     border-radius: 25px;
     font-size: 24px;
 }
-#side-left {
+.side-left {
     float: left;
     padding: 2.5rem;
 }
-#side-right {
+.side-right {
     float: right;
     padding: 2.5rem;
 }
-
-/* .main-projects :first-child p {
-    padding: 2.5rem;
-    float: left;
-}
-.main-projects :last-child p{
-    padding: 2.5rem;
-    float: right;
-} */
-
 .project-1 {
     background-color: #302F3D;
     width: 57.21rem;
@@ -186,6 +220,76 @@ main {
     margin-right: 1rem;
     height: 19rem;
     border-radius: 25px;
+    padding-right: 3rem;
+}
+.folder {
+    width: 57.21rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    color: #837E9F;
+}
+.folder svg {
+    padding-left: 4rem;
+    width: 35px;
+    height: 35px;
+}
+.project-info {
+    width: 57.21;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    color: #837E9F  ;
+}
+.project-info h2 {
+    padding-left: 5rem;
+    padding-right: 1rem;
+    font-size: 18px;
+}
+.project-starbranch {
+    width: 57.21;
+    height: 6.2rem;
+    display: flex;
+    align-items: center;
+    color: #837E9F;
+    padding-left: 4rem;
+}
+.project-starbranch svg {
+    width: 35px;
+    height: 35px;
+}
+.star:hover {
+    color: yellow ;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+.branch:hover {
+    color: white;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+.project-starbranch h2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 19px;
+}
+.language-prog {
+    width: 20rem;
+    height: 6.4rem;
+    margin-left: 20rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}
+.language-prog figure {
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 19px;
+    height: 19px;
+    left: 787px;
+    top: 295px;
+    background: #E7DE79;
+    border: 2px solid #837E9F;
 }
 .project-2 {
     background-color: #302F3D;
@@ -207,6 +311,12 @@ main {
     height: 8rem;
     border-radius: 25px;
 }
+.recent-projects p {
+    float: left;
+    padding: 2.5rem;
+    font-size: 24px;
+    font-weight: bold;
+}
 .post {
     background-color: #302F3D;
     width: 100%;
@@ -216,4 +326,36 @@ main {
     margin-left: 3rem;
     height: 16rem;
     border-radius: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
 }
+.post img {
+    width: 10rem;
+    height: 10rem;
+    padding-left: 5rem;
+}
+.post-flex {
+    display: flex;
+    flex-direction: column;
+}
+.post-text-title {
+    display: flex;  
+    flex-direction: column; 
+    width: 102rem;
+    height: 5.6rem;
+    font-size: 18px;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    color: #837E9F;
+}
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #837E9F;
+        height: 10vh;
+        width: 100%;
+        border-top: 2px solid #837E9F;
+    }
